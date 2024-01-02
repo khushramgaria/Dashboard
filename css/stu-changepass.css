@@ -1,0 +1,170 @@
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+        height: 100vh;
+        background: #efefef;
+    }
+    .sidebar {
+        margin: 20px 0;
+        height: 100vh;
+    }
+    .sidebar .password a,
+    .sidebar .password i{
+        color: #FF6575;
+    }
+    .pic {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 25px 20px 10px;
+        border-radius: 20px;
+    }
+    .pic h6 {
+        padding: 0 0 10px;
+    }
+    .pic img {
+        border-radius: 100%;
+        width: 60%;
+    }
+    .pic h4 {
+        font-weight: bold;
+        padding: 10px 0 0 0;
+        color: #FF6575;
+    }
+    .pic p {
+        font-size: 14px;
+        color: #685F78;
+    }
+    .sidebar-a {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin: 13px 0 20px;
+        border-radius: 20px;
+        height: 54.2vh;
+    }
+    .sidebar-a .profile {
+        padding: 20px 0 8px;
+    }
+    .sidebar-a .password,
+    .sidebar-a .enrolled,
+    .sidebar-a .edit {
+        padding: 0 0 8px;
+    }
+    .sidebar-a i {
+        color: #002058;
+        font-size: 19px;
+        padding: 0 7px 0 0;
+        transition: 0.5s;
+    }
+    .sidebar-a a {
+        text-decoration: none;
+        color: #002058;
+        font-size: 17px;
+        margin: 30px 0;
+        transition: 0.5s;
+    }
+    .sidebar-a .profile:hover a,
+    .sidebar-a .profile:hover i,
+    .sidebar-a .password:hover a,
+    .sidebar-a .password:hover i,
+    .sidebar-a .enrolled:hover a,
+    .sidebar-a .enrolled:hover i,
+    .sidebar-a .edit:hover a,
+    .sidebar-a .edit:hover i {
+        color: #FF6575;
+    }
+    
+    .content {
+    margin: 20px 0;
+    background: #ffffff;
+    /* width: 130vh; */
+    padding: 20px 35px;
+    border-radius: 20px;
+}
+
+.content .profile-head,
+.password-head,
+.login-head {
+    color: #002058;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    padding: 0 0 20px;
+    font-size: 30px;
+}
+
+.content .profile-head i,
+.password-head i {
+    color: #FF6575;
+    padding-right: 7px;
+}
+
+.password-head::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 25%;
+    background-color: #FF6575;
+    margin: 0 0 10px 5px;
+}
+
+.container-password {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 15px;
+}
+
+.container-password .password-grid-1 {
+    margin: 0 20px 0 0;
+}
+
+.or {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.change-password label {
+    font-weight: bold;
+}
+
+.reset-button {
+    margin: 20px 0;
+}
+
+.reset-button a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #FF6575;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.reset-button a:hover {
+    text-decoration: underline;
+}
+@media(max-width:768px){
+    .password-head::after {
+        width: 60%;
+    }
+    .container-password {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 15px;
+}
+.password-grid-2 {
+    margin-top: 15px;
+}
+.sidebar-a {
+    height: 51vh;
+}
+}

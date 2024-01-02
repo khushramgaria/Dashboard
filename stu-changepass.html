@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student - Change Password</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stu-changepass.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="pic">
+                    <h6>Dashboard</h6>
+                    <img src="img/student.jpg" alt="">
+                    <h4>Khushpreet Singh</h4>
+                    <p>Student</p>
+                </div>
+                <div class="sidebar-a">
+                    <div class="profile"><i class="bi bi-person-fill"></i><a href="index.html">My Profile</a></div>
+                    <div class="password"><i class="bi bi-lock-fill"></i><a href="stu-changepass.html">Change Password</a></div>
+                    <div class="enrolled"><i class="bi bi-bookmarks-fill"></i><a href="stu-courses.html">Enrolled Courses</a></div>
+                    <div class="edit"><i class="bi bi-gear-wide-connected"></i><a href="stu-editprofile.html">Edit Profile</a></div>
+                </div>
+            </div>
+            <div class="col-md-9 content">
+                <div class="change-password">
+                    <div class="password-head"><i class="bi bi-lock-fill"></i>Change Password</div>
+                    <form>
+                        <label class="form-label">Current Password</label>
+                        <input type="text" class="form-control" placeholder="Your Current Password">
+                        <div class="container-password">
+                            <div class="password-grid-1">
+                                <label class="form-label">New Password</label><br>
+                                <input type="text" class="form-control" placeholder="Enter New Password">
+                            </div>
+                            <div class="password-grid-2">
+                                <label class="form-label">Re-type New Password</label><br>
+                                <input type="text" class="form-control" placeholder="Re-type New Password">
+                            </div>
+                            <div class="reset-button">
+                                <a href="">Change Password</a>
+                            </div>
+                        </div>
+                    </form>
+                    <div><p class="or">OR</p></div>
+                    <div><p class="reset">Enter your email address and we'll send you an email with instructions to reset your password.</p></div>
+                    <form>
+                        <label class="form-label">Enter Valid Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <div class="reset-button">
+                            <a href="">Reset Password</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

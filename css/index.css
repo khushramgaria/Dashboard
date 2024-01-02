@@ -1,0 +1,183 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 100vh;
+        background: #efefef;
+    }
+    .sidebar {
+        margin: 20px 0;
+        height: 100vh;
+    }
+    .sidebar .profile a,
+    .sidebar .profile i{
+        color: #FF6575;
+    }
+    .pic {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 25px 20px 10px;
+        border-radius: 20px;
+    }
+    .pic h6 {
+        padding: 0 0 10px;
+    }
+    .pic img {
+        border-radius: 100%;
+        width: 60%;
+    }
+    .pic h4 {
+        font-weight: bold;
+        padding: 10px 0 0 0;
+        color: #FF6575;
+    }
+    .pic p {
+        font-size: 14px;
+        color: #685F78;
+    }
+    .sidebar-a {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin: 13px 0 20px;
+        border-radius: 20px;
+        height: 58.2vh;
+    }
+    .sidebar-a .profile {
+        padding: 20px 0 8px;
+    }
+    .sidebar-a .password,
+    .sidebar-a .enrolled,
+    .sidebar-a .edit {
+        padding: 0 0 8px;
+    }
+    .sidebar-a i {
+        color: #002058;
+        font-size: 19px;
+        padding: 0 7px 0 0;
+        transition: 0.5s;
+    }
+    .sidebar-a a {
+        text-decoration: none;
+        color: #002058;
+        font-size: 17px;
+        margin: 30px 0;
+        transition: 0.5s;
+    }
+    .sidebar-a .profile:hover a,
+    .sidebar-a .profile:hover i,
+    .sidebar-a .password:hover a,
+    .sidebar-a .password:hover i,
+    .sidebar-a .enrolled:hover a,
+    .sidebar-a .enrolled:hover i,
+    .sidebar-a .edit:hover a,
+    .sidebar-a .edit:hover i {
+        color: #FF6575;
+    }
+    .content {
+        margin: 20px 0;
+        background: #ffffff;
+        padding: 20px 35px;
+        border-radius: 20px;
+    }
+
+    .content .profile-head,
+    .password-head,
+    .login-head {
+        color: #002058;
+        overflow: hidden;
+        font-weight: bold;
+        font-family: Trebuchet MS, sans-serif;
+        padding: 0 0 20px;
+        font-size: 30px;
+    }
+
+    .content .profile-head i,
+    .password-head i {
+        color: #FF6575;
+        padding-right: 7px;
+    }
+
+    .content .profile-head::after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 17%;
+        background-color: #FF6575;
+        margin-bottom: 10px;
+    }
+
+    .content .profile {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .content .profile label,
+    .profile-p label {
+        color: #FF6575;
+        font-weight: bold;
+    }
+
+    .content .profile h4 {
+        color: #002058;
+        padding: 0 0 25px;
+    }
+
+    .profile-p p {
+        text-align: justify;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 20px 0;
+    }
+
+    .experience .grid-item {
+        margin-top: 20px;
+    }
+
+    .experience .grid-item .icon i {
+        color: #FF6575;
+        background-color: #ffc4ca;
+        padding: 10px 15px;
+        border-radius: 3px;
+        font-size: 20px;
+    }
+
+    .experience .grid-item .icon {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto 15px;
+    }
+
+    .experience .grid-item h5 {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: #002058;
+    }
+    @media(max-width:768px) {
+        .content .profile {
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .sidebar-a {
+            height: 51vh;
+        }
+        .experience {
+            display: grid;
+            grid-template-columns: auto;
+            margin: 20px 0;
+        }
+        .content .profile-head::after {
+            width: 40%;
+        }
+    }

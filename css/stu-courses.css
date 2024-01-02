@@ -1,0 +1,203 @@
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+        height: 100vh;
+        background: #efefef;
+    }
+    .sidebar {
+        margin: 20px 0;
+        height: 100vh;
+    }
+    .sidebar .enrolled a,
+    .sidebar .enrolled i{
+        color: #FF6575;
+    }
+    .pic {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 25px 20px 10px;
+        border-radius: 20px;
+    }
+    .pic h6 {
+        padding: 0 0 10px;
+    }
+    .pic img {
+        border-radius: 100%;
+        width: 60%;
+    }
+    .pic h4 {
+        font-weight: bold;
+        padding: 10px 0 0 0;
+        color: #FF6575;
+    }
+    .pic p {
+        font-size: 14px;
+        color: #685F78;
+    }
+    .sidebar-a {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin: 13px 0 20px;
+        border-radius: 20px;
+        height: 58.2vh;
+    }
+    .sidebar-a .profile {
+        padding: 20px 0 8px;
+    }
+    .sidebar-a .password,
+    .sidebar-a .enrolled,
+    .sidebar-a .edit {
+        padding: 0 0 8px;
+    }
+    .sidebar-a i {
+        color: #002058;
+        font-size: 19px;
+        padding: 0 7px 0 0;
+        transition: 0.5s;
+    }
+    .sidebar-a a {
+        text-decoration: none;
+        color: #002058;
+        font-size: 17px;
+        margin: 30px 0;
+        transition: 0.5s;
+    }
+    .sidebar-a .profile:hover a,
+    .sidebar-a .profile:hover i,
+    .sidebar-a .password:hover a,
+    .sidebar-a .password:hover i,
+    .sidebar-a .enrolled:hover a,
+    .sidebar-a .enrolled:hover i,
+    .sidebar-a .edit:hover a,
+    .sidebar-a .edit:hover i {
+        color: #FF6575;
+    }
+    .content {
+        margin: 20px 0;
+        background: #ffffff;
+        padding: 20px 35px;
+        border-radius: 20px;
+    }
+
+    .content .profile-head,
+    .password-head,
+    .login-head,
+    .courses-head {
+        color: #002058;
+        overflow: hidden;
+        font-weight: bold;
+        font-family: Trebuchet MS, sans-serif;
+        padding: 0 0 20px;
+        font-size: 30px;
+    }
+
+    .content .profile-head i,
+    .password-head i,
+    .courses-head i {
+        color: #FF6575;
+        padding-right: 7px;
+    }
+
+    .courses-head::after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 25%;
+        background-color: #FF6575;
+        margin: 0 0 10px 5px;
+    }
+
+    #courses .row {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+#courses .row .col {
+    border: solid 2px #FF6575;
+    padding: 15px 15px 0;
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px #FF6575;
+}
+
+#courses .row .col h4 {
+    color: #002058;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+#courses .row .col p {
+    color: #FF6575;
+    font-weight: bold;
+    font-size: 25px;
+}
+#c-list .col {
+    border: solid 1.5px #FF6575;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 5px 5px #FF6575; */
+}
+
+#c-list .col .box-img img {
+    border-radius: 5px;
+    padding-bottom: 8px;
+}
+
+#c-list .col .box-inst h5 {
+    font-size: 16px;
+    color: #FF6575;
+}
+
+#c-list .col .box-inst p {
+    font-size: 12px;
+}
+
+#c-list .col .about-box h4 {
+    font-size: 18px;
+    color: #002058;
+}
+
+#c-list .col .about-box h4 {
+    font-size: 18px;
+}
+
+#c-list .col .about-box .icon {
+    padding-bottom: 5px;
+}
+
+#c-list .col .about-box i {
+    color: #FF6575;
+}
+@media(max-width:768px){
+    #courses .row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #courses .row .col {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #c-list .row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #c-list .col {
+        margin-bottom: 15px;
+    }
+    .courses-head::after {
+        width: 70%;
+    }
+    .sidebar-a {
+        height: 51vh;
+    }
+}   
